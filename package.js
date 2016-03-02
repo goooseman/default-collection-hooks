@@ -2,8 +2,8 @@ Package.describe({
   name: 'goooseman:default-collection-hooks',
   version: '1.0.0',
   // Brief, one-line summary of the package.
-  summary: 'Automatically assign default collection hooks' +
-    '(createdAt, createdBy, modifiedAt, modifiedBy) to any Meteor collection',
+  summary: 'Automatically assign default collection fields' +
+    '(createdAt, createdBy, modifiedAt, modifiedBy)',
   // URL to the Git repository containing the source code for this package.
   git: 'https://github.com/goooseman/default-collection-hooks',
   // By default, Meteor will default to using README.md for documentation.
@@ -16,7 +16,7 @@ Package.onUse(function (api) {
   api.use('ecmascript');
   api.use('mongo');
   api.use('tracker');
-  api.use('matb33:collection-hooks');
+  api.use('matb33:collection-hooks@0.7.15');
   api.addFiles('default-collection-hooks.js');
 });
 
